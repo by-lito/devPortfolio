@@ -1,0 +1,22 @@
+Trabajo Final RPG
+
+Angel Miguel Felipe   DAM 1
+
+
+Este trabajo es un pequeño juego RPG por turnos en el que el Jugador se enfrenta a oleadas de monstruos.
+
+Los 3 tipos de monstruos (Boss,Goblin,Orco) heredan de una clase general Enemigo. A su vez el jugador , los NPC y Enemigo heredan de una clase llamada Character o Personaje.
+
+Cada uno de ellos puede ser matado o se puede conversar con ellos, lo cual es aplicado mediante interfaces.
+
+Las oleadas son una clase en si que contiene un array de enemigos que se generan por probabilidad y en relación al nivel del jugador y luego se ordenarán por rareza, cada vez que se mata a un monstruo se gana experiencia y se continua con el siguiente, cada vez que derrotamos a la oleada podremos decidir combatir la siguiente que se creará o hablar con el NPC.
+
+El NPC nos dará los datos de todos los personajes en el juego, incluido el personaje en ese momento.
+
+La excepción que he decidido crear es el fin del juego que se activará cuando la vida del jugador llegue a 0, o gane la partida, generando así dos mensajes de error diferentes GameOver ganar o perder.
+
+En cuanto a la serialización será nuestra mecánica de guardado de los datos del jugador, cargar y guardar.
+
+Las pantallas son una serie de menús hechos con loops en las que se eligen opciones en un switch, para la experiencia de usuario he creado cajas que se adaptan al tamaño de las variables.
+
+ 
